@@ -94,6 +94,8 @@ static id<BFAppLinkResolving> defaultResolver;
 }
 
 - (BFAppLinkNavigationType)navigate:(NSError **)error {
+return 0;
+/*
     // Find the first eligible/launchable target in the BFAppLink.
     BFAppLinkTarget *eligibleTarget = nil;
     for (BFAppLinkTarget *target in self.appLink.targets) {
@@ -141,6 +143,7 @@ static id<BFAppLinkResolving> defaultResolver;
     }
     // Otherwise, navigation fails.
     return retType;
+    */
 }
 
 - (void)postAppLinkNavigateEventNotificationWithTargetURL:(NSURL *)outputURL error:(NSError *)error type:(BFAppLinkNavigationType)type {
